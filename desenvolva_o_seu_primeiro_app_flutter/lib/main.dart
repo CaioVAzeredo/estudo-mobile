@@ -94,6 +94,7 @@ class _TaskState extends State<Task> {
         child: Stack(
           //Stack server para colocar um por cima do outro
           children: [
+            //fundo azul
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -101,6 +102,7 @@ class _TaskState extends State<Task> {
               ),
               height: 140,
             ),
+            //fundo branco com infos
             Column(
               children: [
                 Container(
@@ -112,6 +114,7 @@ class _TaskState extends State<Task> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      //foto
                       Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(6),
@@ -126,6 +129,7 @@ class _TaskState extends State<Task> {
                               fit: BoxFit.cover,
                             ),
                           )),
+                      //texto
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,6 +144,7 @@ class _TaskState extends State<Task> {
                                       .ellipsis, // serve para textos grandes que ultrapassem o tamanho
                                 ),
                               )),
+                          //estrelas
                           Row(
                             children: [
                               Icon(
@@ -181,6 +186,7 @@ class _TaskState extends State<Task> {
                           )
                         ],
                       ),
+                      //botao
                       ElevatedButton(
                           onPressed: () {
                             setState(() {
